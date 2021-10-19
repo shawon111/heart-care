@@ -1,0 +1,20 @@
+footer{
+    padding: 80px 0px;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+.footer-menu a:hover {
+    color: #e10f28;
+}
+.social-icons a{
+    padding: 0px 15px;
+    font-size: 22px;
+    color: #fff;
+}
+.social-icons a:hover {
+    color: #e10f28
+}

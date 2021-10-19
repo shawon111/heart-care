@@ -1,0 +1,7 @@
+.service-thumb img{
+    height: 300px;
+}
+.service-card {
+    border-color: #e10f28;
+    box-shadow: 0px 0px 35px 0px #ceced4;
+}

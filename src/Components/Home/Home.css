@@ -1,0 +1,27 @@
+.home-banner{
+    background-image: url(../../images/home-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 180px 0px;
+}
+
+.banner-subheading::after{
+    content: '';
+    margin-top: 10px;
+    height: 2px;
+    position: absolute;
+    background-color: #e10f28;
+    width: 4%;
+    display: block;
+}
+.banner-heading{
+    font-size: 75px;
+}
+.banner-paragraph{
+    font-size: 20px;
+}
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}

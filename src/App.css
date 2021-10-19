@@ -1,3 +1,47 @@
 .App {
   text-align: center;
 }
+section{
+  padding: 120px 0px;
+}
+p{
+  font-size: 18px;
+}
+.red-text{
+  color: #e10f28;
+  font-weight: 700;
+}
+.red-btn{
+  background-color: #e10f28;
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 30px;
+}
+.red-btn:hover {
+  background-color: #990a1b;
+  color: #fff;
+  transition: .5s;
+  transition-duration: left;
+}
+.dark-btn{
+  background-color: #343a40;
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 30px;
+}
+.dark-btn:hover {
+  background-color: #000;
+  color: #fff;
+  transition: .5s;
+  transition-duration: left;
+}
+.section-heading{
+  font-size: 55px;
+  margin-bottom: 80px;
+}

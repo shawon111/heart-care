@@ -1,0 +1,23 @@
+header{
+    padding: 10px 0px;
+}
+.logo-part-two{
+    color: #e10f28;
+}
+.logo-container{
+    width: 30%;
+}
+.menu{
+    width: 70%;
+    text-align: end;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20;
+    text-transform: uppercase;
+    padding: 0px 15px;
+}
+.menu a:hover {
+    color: #e10f28;
+}

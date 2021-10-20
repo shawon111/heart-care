@@ -5,7 +5,7 @@ import useAuth from '../../hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
-    const {handleGoogleSignIn, setEmail, setPassword, handlePasswordSignUp, handlePasswordSignIn, error} = useAuth();
+    const { handleGoogleSignIn, setEmail, setName, setPassword, handlePasswordSignUp, handlePasswordSignIn, error} = useAuth();
     const [createAccount, setCreateAccount] = useState(true);
     const handleCreateAccount = () => {
         setCreateAccount(!createAccount);
@@ -14,6 +14,10 @@ const Login = () => {
     const handleEmailInput = (e) => {
         const userEmail = (e.target.value);
         setEmail(userEmail);
+    }
+    const handleNameInput = (e) => {
+        const userName = (e.target.value);
+        setName(userName);
     }
     const handlePasswordInput = (e) => {
         const userPassword = (e.target.value);
@@ -39,6 +43,11 @@ const Login = () => {
                 <div className="container login-methods d-flex align-items-top">
                 <div className="login-form w-50">
                 <Form onSubmit={handleOnSubmit}>
+                    {
+                        !createAccount && <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Control onBlur={handleNameInput} type="text" placeholder="Enter name" />
+                    </Form.Group>
+                    }
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Control onBlur={handleEmailInput} type="email" placeholder="Enter email" />
                     </Form.Group>

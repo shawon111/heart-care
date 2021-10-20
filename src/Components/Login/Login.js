@@ -54,6 +54,9 @@ const Login = () => {
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Control onBlur={handlePasswordInput} type="password" placeholder="Password" />
+                        {
+                            !createAccount && <p className="text-start text-warning"><small>*Enter a 6 digit password</small></p>
+                        }
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicCheckbox">
                         <Form.Check onClick={handleCreateAccount} className="text-start" type="checkbox" label="Create new acccount?" />

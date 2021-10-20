@@ -21,3 +21,22 @@ header{
 .menu a:hover {
     color: #e10f28;
 }
+@media only screen and (max-width: 576px){
+    .logo-container{
+        width: 100%;
+    }
+    .header-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu{
+        width: 100%;
+        text-align: center;
+    }
+    .menu a{
+        padding: 5px;
+    }
+    .logo{
+        text-align: center!important;
+    }
+} 

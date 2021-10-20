@@ -9,3 +9,15 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
 }
+
+@media only screen and (max-width: 576px){
+    .department-banner-container{
+        flex-direction: column;
+    }
+    .department-banner-texts{
+        width: 100%!important;
+    }
+    .department-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

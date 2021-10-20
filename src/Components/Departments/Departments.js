@@ -14,12 +14,12 @@ const Departments = () => {
     return (
         <div>
             <section className="department-banner-section">
-                <div className="container d-flex">
+                <div className="container department-banner-container d-flex">
                     <div className="department-banner-texts w-50">
                     <h4 className="text-start text-uppercase fw-normal consults-subheading text-white">services at one glance</h4>
                         <h1 className="department-heading text-white text-start my-4 fw-normal">
                         <span>How can we</span><br/>
-                        <span className="text-dark fw-bold">help you?</span>
+                        <span className="red-text fw-bold">help you?</span>
                         </h1>
                         <p className="banner-paragraph text-start text-white">
                         Credibly innovate granular internal or “organic“ sources whereas high standards in web-readiness. Energistically scale future-proof core competencies vis-a-vis impactful experiences. Dramatically synthesize integrated schemas with optimal networks.

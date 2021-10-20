@@ -2,7 +2,6 @@ import { faFacebook, faTwitter, faYoutube, faWhatsapp } from '@fortawesome/free-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useAuth from '../../hooks/useAuth';
 import './Footer.css';
 
 const Footer = () => {
@@ -11,7 +10,7 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-columns row">
                     <div className="footer-col col-sm-4 col-lg-3 border-end border-1 border-light">
-                        <h1 className="text-white text-center">HeartCare</h1>
+                        <h1 className="text-white text-center footer-heading">HeartCare</h1>
                     </div>
                     <div className="footer-col col-sm-4 col-lg-3 d-flex align-items-center flex-wrap">
                         <div className="footer-menu d-flex">

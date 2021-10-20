@@ -1,0 +1,12 @@
+@media only screen and (max-width: 576px) {
+    .login-methods{
+        flex-direction: column!important;
+    }
+    .login-form{
+        width: 100%!important;
+        margin-bottom: 40px;
+    }
+    .login-buttons{
+        width: 100%!important;
+    }
+}

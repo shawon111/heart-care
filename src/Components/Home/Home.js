@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <div>
             <section className="home-banner">
-                <div className="container d-flex">
+                <div className="container home-banner-container d-flex">
                     <div className="banner-texts w-50">
                         <h4 className="text-start text-uppercase fw-normal banner-subheading">inspiring better health</h4>
                         <h1 className="banner-heading text-dark text-start my-4 fw-normal">
@@ -73,7 +73,7 @@ const Home = () => {
                 </div>
             </section>
             <section className="newsletter-section">
-                <div className="container d-flex">
+                <div className="container newsletter-container d-flex">
                     <div className="newsletter-form-col w-50">
                     <h4 className="text-start text-uppercase fw-normal newsletter-subheading">Get the notifications</h4>
                         <h1 className="newsletter-heading text-dark text-start my-4 fw-normal">
@@ -84,9 +84,9 @@ const Home = () => {
                         Sign up for Medicare newsletter to receive all the new offers and discounts from Medicare clinic. Discounts are only valid four our newsletter subscribers.
                         </p>
                         <div className="newsletter-form mt-3">
-                            <form className="d-flex">
+                            <form className="d-flex subscribe-form">
                                 <input className="form-control w-75 me-2" type="email" name="email" id="newsletter-email" placeholder="Your Email" />
-                                <input className="btn red-btn w-25 ms-2" type="submit" value="Subscribe" />
+                                <input className="btn red-btn w-25 ms-2 newsletter-submit" type="submit" value="Subscribe" />
                             </form>
                         </div>
                     </div>

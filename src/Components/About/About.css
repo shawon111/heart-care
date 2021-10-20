@@ -12,3 +12,17 @@
     width: 4%;
     display: block;
 }
+@media only screen and (max-width: 576px) {
+    .about-banner-container{
+        flex-direction: column!important;
+    }
+    .about-banner-texts{
+        width: 100%!important;
+    }
+    .about-info-container{
+        flex-direction: column!important;
+    }
+    .about-info{
+        width: 100%!important;
+    }
+}

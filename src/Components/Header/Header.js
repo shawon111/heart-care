@@ -7,7 +7,7 @@ const Header = () => {
     const {user, handleSignOut} = useAuth();
     return (
         <header className="bg-dark">
-            <div className="container d-flex align-items-center">
+            <div className="container header-container d-flex align-items-center">
                 <div className="logo-container">
                 <h1 className="logo text-white text-start text-uppercase">Heart<span className="logo-part-two">care</span></h1>
                 </div>

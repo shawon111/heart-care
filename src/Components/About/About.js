@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div>
             <section className="about-banner">
-                <div className="container d-flex">
+                <div className="container about-banner-container d-flex">
                 <div className="about-banner-empty w-50">
 
                 </div>
@@ -22,7 +22,7 @@ const About = () => {
                 </div>
             </section>
             <section>
-                <div className="container text-start d-flex">
+                <div className="container text-start about-info-container d-flex">
                     <div className="about-info w-50 p-4">
                         <h3 className="red-text">Professional team</h3>
                         <p>Globally harness multimedia based collaboration and idea-sharing with backend products. Continually whiteboard superior opportunities.</p>

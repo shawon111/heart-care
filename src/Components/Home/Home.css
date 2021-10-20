@@ -64,3 +64,45 @@
 #newsletter-email{
     border-radius: 30px;
 }
+@media only screen and (max-width: 576px){
+    .home-banner-container{
+        flex-direction: column;
+    }
+    .banner-texts{
+        width: 100%!important;
+    }
+    .banner-buttons{
+        flex-direction: column;
+    }
+    .services-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .consults-texts{
+        width: 100%!important;
+    }
+    .consults-form{
+        width: 100%!important;
+        margin-top: 20px;
+    }
+    .consults-content{
+        flex-direction: column;
+    }
+    .newsletter-container{
+        flex-direction: column!important;
+    }
+    .newsletter-form-col{
+        width: 100%!important;
+    }
+    .subscribe-form{
+        flex-direction: column!important;
+    }
+    #newsletter-email{
+        width: 100%!important;
+    }
+    .newsletter-submit{
+        width: 100%!important;
+    }
+    .banner-heading, .consults-heading, .newsletter-heading, .about-heading, .department-heading{
+        font-size: 50px;
+    }
+}

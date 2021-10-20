@@ -1,0 +1,14 @@
+.about-banner{
+    background-image: url(../../images/bgn-team-members.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.about-subheading::after{
+    content: '';
+    margin-top: 10px;
+    height: 2px;
+    position: absolute;
+    background-color: #e10f28;
+    width: 4%;
+    display: block;
+}

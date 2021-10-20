@@ -1,11 +1,12 @@
 import Button from '@restart/ui/esm/Button';
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
-import useFirebase from '../../hooks/useFirebase';
+import { useLocation } from 'react-router';
+import useAuth from '../../hooks/useAuth';
 import './Login.css';
 
 const Login = () => {
-    const {user, handleGoogleSignIn, handleGithubSignIn, setEmail, setPassword, handlePasswordSignUp, handlePasswordSignIn, error} = useFirebase();
+    const {user, handleGoogleSignIn, setEmail, setPassword, handlePasswordSignUp, handlePasswordSignIn, error} = useAuth();
     const [createAccount, setCreateAccount] = useState(true);
     const handleCreateAccount = () => {
         setCreateAccount(!createAccount);
@@ -37,7 +38,7 @@ const Login = () => {
             </div>
             <div className="container login-methods d-flex align-items-top">
             <div className="login-form w-50">
-            <Form>
+            <Form onSubmit={handleOnSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control onBlur={handleEmailInput} type="email" placeholder="Enter email" />
                 </Form.Group>
@@ -49,7 +50,7 @@ const Login = () => {
                     <Form.Check onClick={handleCreateAccount} className="text-start" type="checkbox" label="Create new acccount?" />
                 </Form.Group>
                 <div className="submit-button text-start">
-                <Button className="red-btn btn mt-4" onClick={handleOnSubmit} variant="primary" type="submit">
+                <Button className="red-btn btn mt-4" variant="primary" type="submit">
                     {
                         createAccount ? <span>Login</span> : <span>Register</span>
                     }
@@ -62,8 +63,7 @@ const Login = () => {
             </div>
             <div className="login-buttons w-50">
                 <h5 className="text-dark text-uppercase mb-3">Or Login With</h5>
-            <button className="btn red-btn me-2" onClick={handleGoogleSignIn}>google login</button>
-            <button className="btn dark-btn ms-2" onClick={handleGithubSignIn}>github login</button>
+            <button className="btn red-btn me-2" onClick={handleGoogleSignIn}>google</button>
             </div>
             </div>
         </section>

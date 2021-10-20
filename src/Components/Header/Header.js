@@ -1,8 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import './Header.css';
 
 const Header = () => {
+    const {user, handleSignOut} = useAuth();
     return (
         <header className="bg-dark">
             <div className="container d-flex align-items-center">
@@ -13,7 +15,13 @@ const Header = () => {
                     <NavLink to='/home'>Home</NavLink>
                     <NavLink to='/about'>About Us</NavLink>
                     <NavLink to='/departments'>Departments</NavLink>
-                    <NavLink to='/login'>Register/Login</NavLink>
+                    {
+                        user?.email ? <NavLink onClick={handleSignOut} to='/login'>Logout</NavLink> : 
+                        <NavLink to='/login'>Login</NavLink>    
+                    }
+                    {
+                        user.email && <a href="#" className="red-text">{user.displayName}</a>
+                    }
                 </div>
             </div>
         </header>

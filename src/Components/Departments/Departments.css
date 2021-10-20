@@ -1,0 +1,11 @@
+.department-banner-section{
+    background-image: url(../../images/page-headline-06.jpg), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+}
+.department-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}

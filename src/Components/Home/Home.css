@@ -14,7 +14,35 @@
     width: 4%;
     display: block;
 }
-.banner-heading{
+.consults-subheading::after{
+    content: '';
+    margin-top: 10px;
+    height: 2px;
+    position: absolute;
+    background-color: #fff;
+    width: 4%;
+    display: block;
+}
+.consults-form-subheading::after{
+    content: '';
+    margin-top: 10px;
+    height: 2px;
+    position: absolute;
+    background-color: #fff;
+    width: 4%;
+    display: block;
+}
+.newsletter-subheading::after{
+    content: '';
+    margin-top: 10px;
+    height: 2px;
+    position: absolute;
+    background-color: #e10f28;
+    width: 4%;
+    display: block;
+}
+
+.banner-heading, .consults-heading, .newsletter-heading, .about-heading, .department-heading{
     font-size: 75px;
 }
 .banner-paragraph{
@@ -24,4 +52,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
+}
+.consults-section, .select-doctor{
+    background-color: #e10f28;
+}
+.newsletter-section{
+    background-image: url(../../images/bgn-newsletter-subscribe.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#newsletter-email{
+    border-radius: 30px;
 }

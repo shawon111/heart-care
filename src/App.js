@@ -9,12 +9,14 @@ import Register from './Components/Register/Register';
 import PageNotFound from './Components/PageNotFound/PageNotFound';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
-import UserLogin from './Components/UserLogin/UserLogin';
 import ServiceDetail from './Components/ServiceDetail/ServiceDetail';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import AuthProvider from './context/AuthProvider';
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <BrowserRouter>
         <Header></Header>
         <Switch>
@@ -24,24 +26,21 @@ function App() {
             <Route exact path="/home">
                <Home></Home>
             </Route>
-            <Route exact path="/about">
+            <PrivateRoute exact path="/about">
                <About></About>
-            </Route>
-            <Route exact path="/departments">
+            </PrivateRoute>
+            <PrivateRoute exact path="/departments">
                <Departments></Departments>
-            </Route>
-            <Route exact path="/userlogin">
-               <UserLogin></UserLogin>
-            </Route>
+            </PrivateRoute>
             <Route exact path="/login">
                <Login></Login>
             </Route>
             <Route exact path="/register">
                <Register></Register>
             </Route>
-            <Route exact path="/:serviceId">
+            <PrivateRoute exact path="/:serviceId">
                <ServiceDetail></ServiceDetail>
-            </Route>
+            </PrivateRoute>
             <Route exact path="*">
                <PageNotFound></PageNotFound>
             </Route>
@@ -49,6 +48,7 @@ function App() {
         </Switch>
         <Footer></Footer>
       </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }
